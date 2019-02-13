@@ -5,3 +5,46 @@ h1{
 h2{
     text-align: center;
 }
+
+#color-picker{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-chooser{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.blue-color{
+    background-color:blue; 
+    border-color: darkblue;
+}
+
+.red-color{
+    background-color:red; 
+    border-color: darkred;
+}
+
+.green-color{
+    background-color:green;
+    border-color: darkgreen;
+}
+
+.yellow-color{
+    background-color:yellow;
+    border-color: darkgoldenrod;
+}
+
+#button-div{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#button{
+    font-size: 20px;
+    padding: 5px 10px;
+}
