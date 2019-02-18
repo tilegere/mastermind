@@ -6,19 +6,30 @@
     </head>
     <body>
         <h1>Welcome to Mastermind!</h1>
-        <h2>This will be my first Github project to add to my portfolio</h2>
-        <div id="color-picker">
-            <div class="color-chooser blue-color"></div>
-            <div class="color-chooser red-color"></div>
-            <div class="color-chooser green-color"></div>
-            <div class="color-chooser yellow-color"></div>
-        </div>
-        <div class="play-space">
-        
+        <h2>This will be my first Github project to add to my portfolio (currently incomplete)</h2>
+        <div id="main-div">
+            <ul id="color-picker">
+                <li class="color-chooser blue" onclick="colorSet('blue')"></li>
+                <li class="color-chooser red" onclick="colorSet('red')"></li>
+                <li class="color-chooser green" onclick="colorSet('green')"></li>
+                <li class="color-chooser yellow" onclick="colorSet('yellow')"></li>
+            </ul>
+            <div id="tried-count">
+                <p>Attempt count: 0</p>
+            </div>
+            <ul class="play-space">
+                <li class="color-setter unspecified"></li>
+                <li class="color-setter unspecified"></li>
+                <li class="color-setter unspecified"></li>
+                <li class="color-setter unspecified"></li>
+            </ul>
+            <ul class="correct-count"></ul>
         </div>
         <div id="button-div">
             <button id="button">Submit</button>
         </div>
+        
         <h2><a href="https://tilegere.github.io/">Link back to main page</a></h2>
+        <script src="script.js"></script>
     </body>
 </html>
