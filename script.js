@@ -46,7 +46,7 @@ checkMatches = function(lastDiv){
         if (lastDiv.children[i].className == "color-setter " + solution[i]){
             matchNo++;
             matchCheckSolution[i] = true;
-            matchCheckSpot[j] = true;
+            matchCheckSpot[i] = true;
         }
     }
     
@@ -58,7 +58,6 @@ checkMatches = function(lastDiv){
                         matchCheckSolution[i] = true;
                         matchCheckSpot[j] = true;
                         nearMatch++;
-                        console.log("Matched color " + i + " with spot " + j);
                     }
                     
                 }
@@ -158,8 +157,6 @@ button.addEventListener('click', function(event){
         count++;
         document.getElementById('turn-count').innerHTML = "Attempt count: " + count;
     }
-    console.log("matchNo: " + matchNo);
-    console.log("nearMatch: " + nearMatch);
 });
 
 setUndoColor();
